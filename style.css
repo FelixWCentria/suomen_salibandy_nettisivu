@@ -79,19 +79,38 @@ footer {
     margin: 20px 10px;
 }
 
-
 .footer-columns {
     display: flex;
-    flex-wrap: wrap;
     gap: 1em;
 }
 
-.footer-columns .column {
+.column-left {
     flex: 1;
     padding: 1em;
 
     /*TEMP*/
     border: 1px solid rgb(54, 54, 54);
+}
+
+.column-middle {
+    flex: 1;
+    padding: 1em;
+
+    /*TEMP*/
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.column-right {
+    flex: 1;
+    padding: 1em;
+
+    /*TEMP*/
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.column-left img {
+    height: 250px;
+    display: block;
 }
 
 footer ul {
@@ -105,8 +124,6 @@ footer ul {
 
 footer ul li {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 footer ul li a {
@@ -116,8 +133,21 @@ footer ul li a {
 }
 
 footer img {
-    max-width: 100%;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.general-info-container {
+
+}
+
+.socialmedia-container {
+    display: flex;
+    float: right;
+}
+
+.socialmedia-item img {
+    margin: 20px;
 }
 
 /* Responsiivisuus */
