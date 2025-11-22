@@ -1,0 +1,123 @@
+/* YLEISET ASETUKSET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+}
+
+p a {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+body {
+    background: #0D1B2A;
+    color: #E0E0E0;
+}
+
+
+
+/*Header ja navigaatio*/
+header {
+    position: relative;
+}
+
+nav {
+    background-color: #1565C0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em 80px;
+    margin: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+}
+
+/*Nav logo*/
+
+.nav-logo {
+    position: absolute;
+    top: -35px; 
+    left: 20px;
+    z-index: 10;
+}
+
+.nav-logo img {
+   width: auto;
+   height: 120px;
+}
+
+/* Maini */
+
+
+/* Footeri */
+footer {
+    background-color: #1565C0;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 20px 10px;
+}
+
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.footer-columns .column {
+    flex: 1;
+    padding: 1em;
+
+    /*TEMP*/
+    border: 1px solid rgb(54, 54, 54);
+}
+
+footer ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer ul li {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsiivisuus */
