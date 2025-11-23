@@ -151,3 +151,12 @@ footer img {
 }
 
 /* Responsiivisuus */
+
+/* Mobiili */
+@media (max-width: 360px) {}
+
+/* Tabletti */
+@media (min-width: 768px) {}
+
+/* Työpöytä */
+@media (min-width: 1920px) {}
