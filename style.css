@@ -113,6 +113,10 @@ footer {
     display: block;
 }
 
+.column-right a {
+    color: #E0E0E0;
+}
+
 footer ul {
     list-style: none;
     height: 100%;
