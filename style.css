@@ -20,7 +20,6 @@ body {
 }
 
 
-
 /*Header ja navigaatio*/
 header {
     position: relative;
@@ -68,10 +67,78 @@ nav a {
    height: 120px;
 }
 
-/* Maini */
+/* Maini */ 
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1565C0;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 50px 10px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 1em 0;
+}
+
+.intro-video-container {
+    width: 100%;
+    max-width: 560px;
+
+}
+
+.intro-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+    border: 0;
+   
+}
+
+.intro-text {
+    font-size: large;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text p {
+    flex:1;
+}
+
+.text-container, .intro-text {
+    background-color: #0c407c;  
+}
+
+.regular-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    width: 100%;
+    gap: 20px;
+}
+
+.text-container {
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.solo-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
 /* Footeri */
+
 footer {
     background-color: #1565C0;
     border-radius: 6px;
