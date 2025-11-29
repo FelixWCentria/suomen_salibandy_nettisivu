@@ -81,14 +81,6 @@ nav a {
     flex-grow: 1;
 }
 
-.layout-form {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-  
-}
-
-
 .intro-container {
     display: flex;
     flex-direction: row;
@@ -124,7 +116,7 @@ nav a {
     flex:1;
 }
 
-.text-container, .intro-text {
+.text-container, .intro-text , .player-container {
     background-color: #0c407c;  
 }
 
@@ -147,6 +139,63 @@ nav a {
     border-radius: 5px;
 }
 
+.player-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 15px 25px 23px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.player-card-reverse-titel {
+    padding: 0 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse !important; 
+}
+
+.player-card-info {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 20px;
+}
+
+.player-card-info ol {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.player-card img {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 6px;
+}
+
+.layout-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
 
 .sidebar {
     width: 200px;
@@ -325,3 +374,4 @@ footer img {
 
 /* Työpöytä */
 @media (min-width: 1920px) {}
+
