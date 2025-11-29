@@ -30,48 +30,93 @@
         </header>
 
         <main>
-            <div class="main-container">
-                <h1>Uutiskirje ja palaute lomakkeet</h1>
+            <div class="layout-form">
 
-                <!-- uutiskirje tilaus lomake -->
-                <div>
-                    <h2>Salibandy uutiskirje</h1>
-                    <form name="uutiskirje" method="post" >
+                <!-- Vasen kuva -->
+                <aside class="sidebar">
+                    <img src="Kuvat/Astala.jpg" alt="Aaro Astala">
+                </aside>
 
-                        <!-- Koko nimi -->
-                        <label for="nimi">Nimi*:</label>
-                        <input type="text" id="nimi" name="nimi" placeholder="Koko nimi" required autofocus>
+                <div class="main-container">
 
-                        <!-- Sähköposti -->
-                        <label for="sposti">Sähköposti*:</label>
-                        <input type="email" id="sposti" name="sposti" required>
+                    <!-- Liity jäseneksi lomake -->
+                    <h1>Liity salibandy jäseneksi</h1>
+                    <br/>
 
-                        <!-- Ikä -->
-                        <label for="ika">Ikä:</label>
-                        <input type="number" id="ika" name="ika" min="1" max="110" placeholder="Anna ikäsi">
+                    <div class="form-container">
+                        <form name="jaseneksi" method="post">
 
-                        <label for="pvm">Syntymäpäivä:</label>
-                        <input type="date" id="pvm" name="pvm" min="2025-10-15" max="2025-10-20">
+                            <div class="input-container">
+                                <!-- Koko nimi -->
+                                <label for="nimi">Nimi*:</label>
+                                <input type="text" id="nimi" name="nimi" placeholder="Koko nimi" required autofocus>
 
-                        <fieldset id="spuoli">
-                            <legend>Sukupuoli:</legend>
-                            <label for="mies" class="radio">
-                                <input class="radio-input" type="radio" id="mies" name="sukupuoli" value="Mies"> Mies
-                            </label>
-                            <br>
-                            <label for="nainen" class="radio">
-                                <input class="radio-input" type="radio" id="nainen" name="sukupuoli" value="Nainen"> Nainen
-                            </label>
-                        </fieldset>
+                                <!-- Sähköposti -->
+                                <label for="sposti">Sähköposti*:</label>
+                                <input type="email" id="sposti" name="sposti" required>
 
-                        <div class="button-container">
-                            <button type="submit">Lähetä</button>
-                            <button type="reset">Tyhjennä</button>
-                        </div>
-                    </form>
+                                <!-- Salasana -->
+                                <label for="sala">Salasana*:</label>
+                                <input type="password" id="sala" name="sala" min="11" title="Anna vähintään 11 merkkiä" required>
+
+                                <!-- Ei pakollisia tietoja -->
+
+                                <!-- Suosikki pelinumero -->
+                                <label for="pelinumero">Suosikki pelinumero:</label>
+                                <input type="number" id="pelinumero" name="pelinumero" min="1" max="99">
+
+                                <!-- Syntymäpäivä -->
+                                <label for="synty-pvm">Syntymäpäivä:</label>
+                                <input type="date" id="synty-pvm" name="synty-pvm">
+
+                                <!-- Sukupuoli -->
+                                <fieldset id="spuoli">
+
+                                    <legend>Sukupuoli:</legend>
+
+                                    <div class="radio-group-container">
+                                        <label for="mies" class="radio">
+                                            <input class="radio-input" type="radio" id="mies" name="sukupuoli" value="Mies"> Mies
+                                        </label>
+                                        <br>
+                                        <label for="nainen" class="radio">
+                                            <input class="radio-input" type="radio" id="nainen" name="sukupuoli" value="Nainen"> Nainen
+                                        </label>
+                                    </div>
+
+                                    <div class="radio-group-container">
+                                        <label for="poika" class="radio">
+                                            <input class="radio-input" type="radio" id="poika" name="sukupuoli" value="Poika"> Poika
+                                        </label>
+                                        <br>
+                                        <label for="tytto" class="radio">
+                                            <input class="radio-input" type="radio" id="tytto" name="sukupuoli" value="Tytto"> Tyttö
+                                        </label>
+                                    </div>
+
+                                </fieldset>
+
+                                <!-- Lisätietoa -->
+                                <label for="lisatietoja">Lisätietoja:</label>
+                                <textarea id="lisatietoja" name="lisatietoja" rows="4" placeholder="Kirjoita viestisi tähän"></textarea>
+                            </div>
+
+                            <div class="button-container">
+                                <button type="submit">Lähetä</button>
+                                <button type="reset">Tyhjennä</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
+
+                <!-- Oikea kuva -->
+                <aside class="sidebar">
+                    <img src="Kuvat/Kauppinen.jpg" alt="Veera Kauppinen">
+                </aside>
             </div>
         </main>
+
 
         <footer>
             <section class="footer-columns">
