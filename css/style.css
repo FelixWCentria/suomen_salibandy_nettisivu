@@ -146,7 +146,41 @@ nav a {
     gap: 2rem;
     max-width: 1280px;
     width: 100%;
+
+    border-radius: 10px;
+    border: 1px solid rgb(54, 54, 54);
+    padding: 20px;
 }
+
+.gender-title-wrapper {
+    position: relative;
+    text-align: center;
+    margin: 40px 0 30px;
+    width: 80%; 
+}
+
+
+.gender-title-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(54, 54, 54);
+    z-index: 1;
+}
+
+.team-gender-title {
+    position: relative; 
+    z-index: 10; 
+    
+    background-color: #1565C0; 
+    padding: 0 15px;
+    display: inline-block; 
+}
+
 
 .team-card {
     display: flex;
