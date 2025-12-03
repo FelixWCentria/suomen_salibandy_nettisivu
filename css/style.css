@@ -139,6 +139,30 @@ nav a {
     border-radius: 5px;
 }
 
+.team-standing-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.team-standing-container th {
+    text-align: center;
+    border: 2px solid rgb(54, 54, 54);
+    padding: 10px;
+}
+
+.team-standing-container td {
+    text-align: left;
+    border: 2px solid rgb(54, 54, 54);
+    padding: 10px;
+}
+
+.team-standing-falloff-divider td {
+    border-bottom: 2px solid #aa2933; 
+}
+
 .team-list-container {
     display: flex;
     flex-wrap: wrap;
