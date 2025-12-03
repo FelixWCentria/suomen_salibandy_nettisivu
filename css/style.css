@@ -419,23 +419,6 @@ footer {
     flex: 1;
     padding: 1em;
 
-    /*TEMP*/
-    border: 1px solid rgb(54, 54, 54);
-}
-
-.column-middle {
-    flex: 1;
-    padding: 1em;
-
-    /*TEMP*/
-    border: 1px solid rgb(54, 54, 54);
-}
-
-.column-right {
-    flex: 1;
-    padding: 1em;
-
-    /*TEMP*/
     border: 1px solid rgb(54, 54, 54);
 }
 
@@ -444,9 +427,40 @@ footer {
     display: block;
 }
 
+
+.column-middle {
+    flex: 1;
+    padding: 1em;
+
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.column-right {
+    flex: 1;
+    padding: 1em;
+
+    border: 1px solid rgb(54, 54, 54);
+}
+
 .column-right a {
     color: #E0E0E0;
 }
+
+.general-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialmedia-container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.socialmedia-item img {
+    margin: 10px;
+}
+
 
 footer ul {
     list-style: none;
@@ -472,18 +486,6 @@ footer img {
     margin-right: auto;
 }
 
-.general-info-container {
-
-}
-
-.socialmedia-container-footer {
-    display: flex;
-    float: right;
-}
-
-.socialmedia-item img {
-    margin: 20px;
-}
 
 /* Responsiivisuus */
 
