@@ -116,7 +116,7 @@ nav a {
     flex:1;
 }
 
-.text-container, .intro-text , .player-container, .team-card {
+.text-container, .intro-text , .player-container, .team-card, .history-content {
     background-color: #0c407c;  
 }
 
@@ -137,6 +137,91 @@ nav a {
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 1rem;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.history-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%; 
+}
+
+.history-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #0c407c;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.history-left {
+  left: 0;
+}
+
+.history-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #0c407c;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #0c407c;
+}
+
+.history-right {
+  left: 50%;
+}
+
+.history-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #0c407c;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #0c407c transparent transparent;
+}
+
+.history-right::after {
+  left: -16px;
+}
+
+.history-content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.history-content h2 {
+    margin-bottom: 1rem;
 }
 
 .team-standing-container {
