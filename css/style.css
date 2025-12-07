@@ -607,6 +607,10 @@ footer img {
     margin-right: auto;
 }
 
+.update-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* Responsiivisuus */
 
