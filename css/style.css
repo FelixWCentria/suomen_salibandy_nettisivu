@@ -82,6 +82,10 @@ nav a {
     flex-grow: 1;
 }
 
+.main-container h1 {
+    margin-bottom: 1rem;
+}
+
 .intro-container {
     display: flex;
     flex-direction: row;
@@ -386,6 +390,10 @@ nav a {
     display: flex;
     flex-direction: column; 
     padding: 0 20px;
+}
+
+.player-card-info p {
+    margin-bottom: 1rem;
 }
 
 .player-card-info ol {
