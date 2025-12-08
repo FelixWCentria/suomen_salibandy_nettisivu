@@ -132,6 +132,9 @@ nav a {
 .text-container {
     border-radius: 5px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .solo-image {
