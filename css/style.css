@@ -573,12 +573,18 @@ footer {
 .general-info-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.general-info-container h4 {
+    margin-bottom: 15px;
 }
 
 .socialmedia-container-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .socialmedia-item img {
